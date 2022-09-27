@@ -7,11 +7,14 @@ public class Main {
 
 		
 		Product product=new Product();
-		product.name="Laptop";
-		product.id=1;
-		product.description="Asus Laptop";
-		product.stockAmount=3;
-		System.out.println(product.name);
+		product.setName("Laptop");
+		product.setId(1);
+		product.setDescription("Asus Laptop");
+		product.setStockAmount(3);
+		product.setPrice(5000);
+		
+		System.out.println(product.getName());
+		System.out.println(product.getKod());
 		
 		ProductManager productManager=new ProductManager();
 		productManager.add(product);
