@@ -2,6 +2,24 @@ package fieldAttribute;
 
 public class Product {
 
+	
+	public Product() {
+		
+		System.out.println("Yapıcı blok çalıştı");
+	}
+	
+	
+	public Product(int id, String name, String description, double price, int stockAmount, String kod) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.stockAmount = stockAmount;
+		this.kod = kod;
+	}
+
+
 	private int id;
 	private String name;
 	private String description;
